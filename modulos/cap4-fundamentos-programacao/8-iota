@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+const (
+	a = iota + 10000
+	_
+	c
+	x
+	_
+	z
+)
+
+func main() {
+	fmt.Println(a, c, x, z)
+}
+
+// Go’s iota identifier is used in const declarations to simplify definitions of incrementing numbers.
+//
