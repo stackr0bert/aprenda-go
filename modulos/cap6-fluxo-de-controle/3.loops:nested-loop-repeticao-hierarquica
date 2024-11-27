@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+func main() {
+	for h := 0; h <= 12; h++ {
+		fmt.Println("hora:", h)
+
+		for m := 0; m < 60; m++ {
+			fmt.Print(" ", m)
+		}
+		fmt.Println(" ")
+	}
+}
