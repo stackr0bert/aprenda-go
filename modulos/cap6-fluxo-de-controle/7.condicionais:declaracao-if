@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func main() {
+	x := 10 // pode fazer assim
+	if x < 100 {
+		fmt.Println("x é menor que 10!")
+	}
+	if !(x > 100) { // ! é o operador NOT
+		fmt.Println("x não é maior que 100!")
+	}
+
+	if name := "r0bert"; name == "r0bert" { // ou assim também
+		fmt.Println("Olá,", name, "!")
+	}
+}
