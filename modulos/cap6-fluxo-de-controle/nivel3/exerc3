@@ -8,15 +8,11 @@ import "fmt"
 var ano int
 
 func main() {
-	
 	fmt.Println("Digite o ano que você nasceu:")
 	fmt.Scan(&ano)
-	
-	for ano := ano <= 2024; ano++ {
-	fmt.Println(ano)
 
-  }
-
+	for ano <= 2024 {
+		fmt.Println(ano)
+		ano++
 	}
-	
-
+}

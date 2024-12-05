@@ -1,0 +1,29 @@
+// Faça um programa que use if, else if e else
+package main
+
+import "fmt"
+
+var (
+	texto     string
+	inteiro   int
+	flutuante float64
+	booleano  bool
+	escolha   int
+)
+
+func main() {
+	fmt.Println("Escolha uma das opções abaixo:")
+	fmt.Println("1. Texto\n2. Inteiro\n3. Flutuante\n4. Booleano")
+	fmt.Scan(&escolha)
+	if escolha == 1 {
+		fmt.Printf("Seu tipo de dado é %T", texto)
+	} else if escolha == 2 {
+		fmt.Printf("Seu tipo de dado é %T", inteiro)
+	} else if escolha == 3 {
+		fmt.Printf("Seu tipo de dado é %T", flutuante)
+	} else if escolha == 4 {
+		fmt.Printf("Seu tipo de dado é %T", booleano)
+	} else {
+		fmt.Println("Valor inválido, escolha um valor de 1 a 4")
+	}
+}

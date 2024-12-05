@@ -1,0 +1,18 @@
+// crie um programa que demonstre o funcionamento da declaração if.
+
+package main
+
+import "fmt"
+
+var inteiro int
+
+func main() {
+	fmt.Println("Escolha um valor inteiro: ")
+	fmt.Scan(&inteiro)
+
+	if inteiro%2 == 0 {
+		fmt.Println("O valor é par")
+	} else {
+		fmt.Println("O valor é impar")
+	}
+}

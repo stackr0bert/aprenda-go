@@ -1,0 +1,22 @@
+// crie um loop utilizando a sintaxe: for {} condição dentro
+// utilize-o para demonstrar os anos desde que você nasceu.
+
+package main
+
+import "fmt"
+
+var anonascimento int
+
+func main() {
+	fmt.Println("Em que ano você nasceu? ")
+	fmt.Scanln(&anonascimento)
+
+	for {
+		if anonascimento > 2024 {
+			break
+		}
+		fmt.Println(anonascimento)
+		anonascimento++
+
+	}
+}
