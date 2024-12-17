@@ -1,0 +1,25 @@
+// Crie um programa que utilize a declaração switch, sem switch statement especificado;
+
+package main
+
+import "fmt"
+
+var escolha int
+
+func main() {
+	fmt.Println("👇👇👇Escolha um número de 1-3")
+	fmt.Scan(&escolha)
+	switch {
+	case escolha == 1:
+		fmt.Println("Você escolheu 1!")
+
+	case escolha == 2:
+		fmt.Println("Você escolheu 2!")
+
+	case escolha == 3:
+		fmt.Println("Você escolheu 3!")
+	default:
+		fmt.Println("Escolha um valor de 1 a 3")
+
+	}
+}

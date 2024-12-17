@@ -1,0 +1,19 @@
+// Sequencia enumerada de um único tipo, numeros de elementos fixo
+package main
+
+import "fmt"
+
+var (
+	x [5]int
+	y [6]int // x e y são tão incompativeis quanto um int e string
+)
+
+func main() {
+	x[0] = 1
+	x[1] = 10
+	fmt.Println(x[0], x[1])
+	fmt.Println(x)
+	fmt.Printf("%T\n", x)
+	fmt.Printf("%T\n", y)
+	fmt.Println(len(x))
+}
