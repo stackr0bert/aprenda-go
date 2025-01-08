@@ -1,0 +1,41 @@
+package main
+
+import "fmt"
+
+func main() {
+	slice := make([]int, 5, 10)
+	slice[0], slice[1], slice[2], slice[3] = 1, 2, 3, 4
+	// ele dará o slice[4] o valor igual a 0 porque não foi declarado
+	fmt.Printf(
+		"O slice é:%v, o tamanho é: %v , e a capacidade é de:%v ",
+		slice,
+		len(slice),
+		cap(slice),
+	)
+
+	fmt.Println()
+	slice = append(slice, 6)
+	slice = append(slice, 7)
+	slice = append(slice, 8)
+	slice = append(slice, 9)
+	slice = append(slice, 10)
+	fmt.Printf(
+		"O slice é:%v, o tamanho é: %v , e a capacidade é de:%v ",
+		slice,
+		len(slice),
+		cap(slice),
+	)
+	fmt.Println()
+	fmt.Println(
+		"Agora, aumentando para 11 elementos (1 a mais do que a capacidade, o array irá dobrar de capacidade:)",
+	)
+	fmt.Println()
+
+	slice = append(slice, 11)
+	fmt.Printf(
+		"O slice é:%v, o tamanho é: %v , e a capacidade é de:%v ",
+		slice,
+		len(slice),
+		cap(slice),
+	)
+}

@@ -1,0 +1,23 @@
+package main
+
+import "fmt"
+
+func main() {
+	umaslice := []int{1, 2, 3, 4}      // os tipos dentro da slice são int
+	outraslice := []int{9, 10, 11, 12} // ja outraslice é do tipo 'fatia de int'
+
+	umaslice = append(
+		umaslice,
+		5,
+		6,
+		7,
+		8,
+	) // append só consegue passar elementos do mesmo tipo, ou seja
+	// se fosse passado append(umaslice, outraslice) isso daria erro, porque os tipos seriam diferentes
+	// o primeiro paramêtro é o proprio slice, o segundo são os elementos que vão ser adicionados que serão do mesmo tipo
+	// para rsolver isso:
+	umaslice = append(
+		umaslice,
+		outraslice...) // ... é usado, '...' é usado para pegar o conteúdo dentro de outraslice ;)
+	fmt.Println(umaslice)
+}
